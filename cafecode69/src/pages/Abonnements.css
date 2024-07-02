@@ -1,0 +1,83 @@
+.abonnements {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .plan {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 40px);
+    text-align: center;
+  }
+  
+  .plan h3 {
+    margin-top: 0;
+    color:#962307
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #962307;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background: #f4f4f4;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody td:first-child {
+    text-align: left;
+  }
+  

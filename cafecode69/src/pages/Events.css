@@ -1,0 +1,155 @@
+.events .content {
+    padding: 20px;
+  }
+  
+  .events h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .day {
+    margin-bottom: 40px;
+  }
+  
+  .day h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .event button {
+    padding: 5px 10px;
+    background-color: #962307;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event button:hover {
+    background-color: #291b1b;
+  }
+  
+  .event-type.in-person {
+    color: green;
+  }
+  
+  .event-type.online {
+    color: blue;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px;
+  }
+  
+  .signup-form {
+    margin-top: 20px;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover {
+    background-color: #218838;
+  }
+  
+  .close-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    background-color: #c82333;
+  }
+  
+  .weekly-program {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weekly-program h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .weekly-program ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .weekly-program li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
