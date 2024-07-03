@@ -12,25 +12,29 @@ import AtelierTechnologies from './pages/AtelierTechnologies';
 import AtelierGaming from './pages/AtelierGaming';
 import Contact from './pages/Contact';
 import Coworking from './pages/Coworking';
+import Chatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/abonnements" element={<Abonnements />} />
-        <Route path="/ateliers" element={<Ateliers />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/discover" element={<Discover />} />
-        <Route path="/atelier-algorithmes" element={<AtelierAlgorithmes />} />
-        <Route path="/atelier-technologies" element={<AtelierTechnologies />} />
-        <Route path="/atelier-gaming" element={<AtelierGaming />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/coworking" element={<Coworking />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/abonnements" element={<Abonnements />} />
+          <Route path="/ateliers" element={<Ateliers />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/atelier-algorithmes" element={<AtelierAlgorithmes />} />
+          <Route path="/atelier-technologies" element={<AtelierTechnologies />} />
+          <Route path="/atelier-gaming" element={<AtelierGaming />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/coworking" element={<Coworking />} />
+        </Routes>
+        <Chatbot />
+      </div>
     </Router>
   );
 }
