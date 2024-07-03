@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <header>
+    <header style={{padding: "10px"}}>
       <div className="logo">Café Code 69</div>
       <nav>
         <a href="/">Accueil</a>
