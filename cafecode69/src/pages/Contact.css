@@ -1,5 +1,4 @@
 .contact-container {
-    max-width: 800px;
     margin: 0 auto;
     padding: 40px;
     text-align: center;
@@ -11,7 +10,7 @@
   .contact-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #6F4E37;
   }
   
   .contact-container p {
@@ -36,7 +35,7 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #333;
+    color: #6F4E37;
   }
   
   .form-group input,
@@ -82,7 +81,7 @@
     padding: 12px 30px;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #962307;
+    background-color: #7ec17e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -90,6 +89,6 @@
   }
   
   .submit-btn:hover {
-    background-color: #291b1b;
+    background-color: #6F4E37;
   }
   

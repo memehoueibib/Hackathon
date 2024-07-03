@@ -4,13 +4,6 @@
     min-height: 100vh;
   }
   
-  .content {
-    flex: 1;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
   h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -34,18 +27,18 @@
   
   .plan h3 {
     margin-top: 0;
-    color:#962307
+    color:#B0E0E6
   }
   
   .price {
     font-size: 24px;
-    color: #333;
+    color: #6F4E37;
     margin: 10px 0;
   }
   
   button {
     padding: 10px 20px;
-    background: #962307;
+    background: #B0E0E6;
     color: #fff;
     border: none;
     border-radius: 5px;

@@ -1,37 +1,50 @@
 .hero {
-    background-image: url('background.webp');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
+  position: relative;
+  background-image: url('background.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 300px 20px;
+  border-radius: 10px;
+  margin: 70px;
+  overflow: hidden; /* Pour s'assurer que la superposition respecte les bordures arrondies */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
   
   .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    z-index: 2;
   }
   
   .hero-buttons .btn {
-    background-color: #962307;
+    background-color: #7ec17e;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
+    z-index: 2;
   }
   
   .hero-buttons .btn:hover {
-    background-color: #291b1b;
+    background-color: #6F4E37;
   }
   

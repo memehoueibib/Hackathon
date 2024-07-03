@@ -3,7 +3,6 @@
   }
   
   .atelier-details .content {
-    max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -40,8 +39,6 @@
   .content {
     flex: 1;
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
   }
   
   h2, h3 {

@@ -37,7 +37,7 @@
   
   .event button {
     padding: 5px 10px;
-    background-color: #962307;
+    background-color: #7ec17e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@
   }
   
   .event button:hover {
-    background-color: #291b1b;
+    background-color: #6F4E37;
   }
   
   .event-type.in-person {
@@ -95,7 +95,7 @@
   }
   
   .signup-form input {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 20px;

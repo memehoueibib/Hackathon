@@ -14,7 +14,7 @@
   .section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #6F4E37;
   }
   
   .section p {
@@ -31,7 +31,7 @@
   }
   
   .card {
-    background-color: white;
+    background-color: #6F4E37;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -43,12 +43,12 @@
   .card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #962307;
+    color: #7ec17e;
   }
   
   .card p {
     font-size: 1em;
-    color: #555;
+    color: #F5F5F5;
   }
   
   .buttons {
@@ -67,18 +67,18 @@
   }
   
   .btn.black {
-    background-color: #962307;
+    background-color: #7ec17e;
     color: white;
   }
   
   .btn.black:hover {
-    background-color: #291b1b;
+    background-color: #6F4E37;
   }
   
   .btn.white {
     background-color: white;
-    color: #333;
-    border: 2px solid #333;
+    color: #6F4E37;
+    border: 2px solid #6F4E37;
   }
   
   .btn.white:hover {
@@ -146,7 +146,7 @@
 .contact-btn {
   font-size: 1.2rem;
   padding: 10px 20px;
-  background-color: #962307;
+  background-color: #7ec17e;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -154,7 +154,7 @@
 }
 
 .contact-btn:hover {
-  background-color: #291b1b;
+  background-color: #6F4E37;
 }
 
 .cards .card .btn {
@@ -162,7 +162,7 @@
   margin-top: 10px;
   font-size: 1rem;
   padding: 10px 15px;
-  background-color: #962307;
+  background-color: #7ec17e;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -170,5 +170,5 @@
 }
 
 .cards .card .btn:hover {
-  background-color: #291b1b;
+  background-color: #6F4E37;
 }

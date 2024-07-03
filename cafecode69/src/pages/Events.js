@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { jsPDF } from 'jspdf';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Events.css';
@@ -32,6 +33,8 @@ const events = [
 
 function Events() {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
 
   const handleViewDetails = (event) => {
     setSelectedEvent(event);
@@ -39,6 +42,21 @@ function Events() {
 
   const handleCloseModal = () => {
     setSelectedEvent(null);
+    setUserName('');
+    setUserEmail('');
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const doc = new jsPDF();
+    doc.text(`Titre de l'événement: ${selectedEvent.title}`, 10, 10);
+    doc.text(`Type: ${selectedEvent.type}`, 10, 20);
+    doc.text(`Conférencier: ${selectedEvent.speaker}`, 10, 30);
+    doc.text(`Lieu: ${selectedEvent.location}`, 10, 40);
+    doc.text(`Nom: ${userName}`, 10, 50);
+    doc.text(`Email: ${userEmail}`, 10, 60);
+    doc.save('event-details.pdf');
+    handleCloseModal();
   };
 
   return (
@@ -69,17 +87,17 @@ function Events() {
               <p><strong>Type:</strong> {selectedEvent.type}</p>
               <p><strong>Conférencier:</strong> {selectedEvent.speaker}</p>
               <p><strong>Lieu:</strong> {selectedEvent.location}</p>
-              <form className="signup-form">
+              <form className="signup-form" onSubmit={handleSubmit}>
                 <h3>Inscription</h3>
                 <label>
                   Nom:
-                  <input type="text" name="name" required />
+                  <input type="text" name="name" value={userName} onChange={(e) => setUserName(e.target.value)} required />
                 </label>
                 <label>
                   Email:
-                  <input type="email" name="email" required />
+                  <input type="email" name="email" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required />
                 </label>
-                <button type="submit">S'inscrire</button>
+                <button type="submit">S'inscrire et Télécharger PDF</button>
               </form>
               <button className="close-modal" onClick={handleCloseModal}>Fermer</button>
             </div>
