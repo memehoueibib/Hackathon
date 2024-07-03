@@ -13,7 +13,7 @@ Découvrez un espace convivial dédié à l'apprentissage et à la pratique de l
 1. Clonez le dépôt :
 
     ```bash
-    git clone [https://github.com/Hackathon/cafecode69.git](https://github.com/memehoueibib/Hackathon.git)
+    git clone https://github.com/memehoueibib/Hackathon
     ```
 
 2. Accédez au répertoire du projet :
