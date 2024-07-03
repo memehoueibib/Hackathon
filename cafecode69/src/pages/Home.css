@@ -146,7 +146,7 @@
 .contact-btn {
   font-size: 1.2rem;
   padding: 10px 20px;
-  background-color: #000;
+  background-color: #962307;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -154,7 +154,7 @@
 }
 
 .contact-btn:hover {
-  background-color: #444;
+  background-color: #291b1b;
 }
 
 .cards .card .btn {
@@ -162,7 +162,7 @@
   margin-top: 10px;
   font-size: 1rem;
   padding: 10px 15px;
-  background-color: #000;
+  background-color: #962307;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -170,5 +170,5 @@
 }
 
 .cards .card .btn:hover {
-  background-color: #444;
+  background-color: #291b1b;
 }
