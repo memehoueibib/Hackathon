@@ -68,7 +68,7 @@ function Home() {
             <div className="card">
               <h3>Événements Spéciaux</h3>
               <p>Participez à des ateliers, des conférences et des rencontres avec des experts du domaine.</p>
-              <Link to="/evenements" className="btn">Voir les détails</Link>
+              <Link to="/events" className="btn">Voir les détails</Link>
             </div>
             <div className="card">
               <h3>Espaces de Travail Inspirants</h3>
