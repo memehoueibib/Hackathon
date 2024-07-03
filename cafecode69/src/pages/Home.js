@@ -49,7 +49,7 @@ function Home() {
             <div className="card">
               <h3>Espace Membre</h3>
               <p>Accédez à votre profil utilisateur, gérez vos abonnements et consultez votre historique de participations.</p>
-              <Link to="/membre" className="btn">Voir les détails</Link>
+              <Link to="/membres" className="btn">Voir les détails</Link>
             </div>
             <div className="card">
               <h3>Ressources Exclusives</h3>

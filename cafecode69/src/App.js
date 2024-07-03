@@ -12,6 +12,7 @@ import AtelierTechnologies from './pages/AtelierTechnologies';
 import AtelierGaming from './pages/AtelierGaming';
 import Contact from './pages/Contact';
 import Coworking from './pages/Coworking';
+import Membres from './pages/Membres';
 import Chatbot from './components/Chatbot';
 import './App.css';
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/atelier-gaming" element={<AtelierGaming />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/coworking" element={<Coworking />} />
+          <Route path="/membres" element={<Membres />} />
         </Routes>
         <Chatbot />
       </div>

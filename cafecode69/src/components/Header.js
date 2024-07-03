@@ -10,6 +10,7 @@ function Header() {
         <a href="/abonnements">Abonnements</a>
         <a href="/ateliers">Ateliers</a>
         <a href="/events">Événements</a>
+        <a href="/membres">Espace Membre</a>
         <a href="/login">Se Connecter</a>
         <a href="/signup">S'inscrire</a>
       </nav>
