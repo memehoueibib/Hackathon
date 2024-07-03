@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { jsPDF } from 'jspdf';
+import QRCode from 'qrcode';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Events.css';
@@ -8,25 +9,25 @@ const events = [
   {
     date: 'Vendredi 09 Février',
     events: [
-      { time: '8h00', title: "Titre de l'événement", type: 'En personne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '9h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '10h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
+      { time: '8h00', title: "Atelier de Programmation pour Débutants", type: 'En personne', speaker: 'Jean Dupont', location: 'Café Code Lyon, 123 Rue de la Programmation' },
+      { time: '9h00', title: "Conférence sur l'Intelligence Artificielle", type: 'En ligne', speaker: 'Marie Curie', location: 'Zoom' },
+      { time: '10h00', title: "Introduction à la Data Science", type: 'En ligne', speaker: 'Alan Turing', location: 'Zoom' },
     ],
   },
   {
     date: 'Samedi 10 Février',
     events: [
-      { time: '8h00', title: "Titre de l'événement", type: 'En personne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '9h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '10h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
+      { time: '8h00', title: "Atelier de Développement Web Avancé", type: 'En personne', speaker: 'Grace Hopper', location: 'Café Code Lyon, 123 Rue de la Programmation' },
+      { time: '9h00', title: "Machine Learning pour Débutants", type: 'En ligne', speaker: 'Ada Lovelace', location: 'Zoom' },
+      { time: '10h00', title: "Développement de Jeux Vidéo", type: 'En ligne', speaker: 'John Carmack', location: 'Zoom' },
     ],
   },
   {
     date: 'Dimanche 11 Février',
     events: [
-      { time: '8h00', title: "Titre de l'événement", type: 'En personne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '9h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
-      { time: '10h00', title: "Titre de l'événement", type: 'En ligne', speaker: 'Conférencier', location: 'Lieu' },
+      { time: '8h00', title: "Atelier de Sécurité Informatique", type: 'En personne', speaker: 'Kevin Mitnick', location: 'Café Code Lyon, 123 Rue de la Programmation' },
+      { time: '9h00', title: "Blockchain et Cryptomonnaies", type: 'En ligne', speaker: 'Satoshi Nakamoto', location: 'Zoom' },
+      { time: '10h00', title: "Hackathon sur les Technologies Emergentes", type: 'En ligne', speaker: 'Elon Musk', location: 'Zoom' },
     ],
   },
 ];
@@ -46,17 +47,48 @@ function Events() {
     setUserEmail('');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const doc = new jsPDF();
+    const logoUrl = '/logo_nobg.png'; // Remplacez par le chemin de votre logo
+
+    doc.setFontSize(16);
+    doc.setTextColor(40, 40, 40);
     doc.text(`Titre de l'événement: ${selectedEvent.title}`, 10, 10);
+    doc.setFontSize(14);
     doc.text(`Type: ${selectedEvent.type}`, 10, 20);
     doc.text(`Conférencier: ${selectedEvent.speaker}`, 10, 30);
     doc.text(`Lieu: ${selectedEvent.location}`, 10, 40);
+    doc.setFontSize(12);
+    doc.setTextColor(100, 100, 100);
     doc.text(`Nom: ${userName}`, 10, 50);
     doc.text(`Email: ${userEmail}`, 10, 60);
-    doc.save('event-details.pdf');
-    handleCloseModal();
+
+    // Charger le logo et l'ajouter au PDF
+    const img = new Image();
+    img.src = logoUrl;
+    img.onload = () => {
+      doc.addImage(img, 'PNG', 10, 70, 50, 50);
+      const qrCodeUrl = 'http://localhost:3000/'; // Remplacez par votre URL QR code
+
+      // Générer le QR code
+      QRCode.toDataURL(qrCodeUrl, { width: 128, margin: 1 }, (err, url) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        doc.addImage(url, 'PNG', 70, 70, 50, 50);
+
+        // Ajouter un texte professionnel
+        doc.setFontSize(12);
+        doc.setTextColor(40, 40, 40);
+        doc.text(`Merci de votre inscription à notre événement. Veuillez présenter ce ticket à l'entrée de l'atelier.`, 10, 130);
+        doc.text(`Vous pouvez également scanner le QR code pour plus d'informations et pour accéder à votre profil en ligne.`, 10, 140);
+        
+        doc.save('event-details.pdf');
+        handleCloseModal();
+      });
+    };
   };
 
   return (
