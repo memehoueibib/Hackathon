@@ -10,6 +10,7 @@ import Discover from './pages/Discover';
 import AtelierAlgorithmes from './pages/AtelierAlgorithmes';
 import AtelierTechnologies from './pages/AtelierTechnologies';
 import AtelierGaming from './pages/AtelierGaming';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/atelier-algorithmes" element={<AtelierAlgorithmes />} />
         <Route path="/atelier-technologies" element={<AtelierTechnologies />} />
         <Route path="/atelier-gaming" element={<AtelierGaming />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
