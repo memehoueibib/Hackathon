@@ -1,11 +1,9 @@
 .atelier-details {
-  padding: 20px;
   background-color: #f4f4f4;
   font-family: 'Arial', sans-serif;
 }
 
 .atelier-details .content {
-  max-width: 900px;
   margin: 0 auto;
   background-color: #fff;
   padding: 30px;
@@ -80,7 +78,7 @@
   width: 200px;
   margin: 30px auto;
   padding: 15px;
-  background-color: #007bff;
+  background-color: #d18c3c;
   color: white;
   border: none;
   border-radius: 5px;

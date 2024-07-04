@@ -8,9 +8,6 @@ function Abonnements() {
     <div className="abonnements">
       <Header />
       <div className="content">
-        <h2>Réflexion sur les abonnements</h2>
-        <p>Nous avons ensuite discuté des modalités de tarification et avons décidé de proposer des abonnements pour rendre nos services accessibles et attractifs. Les abonnements offriraient des avantages comme des tarifs réduits, un accès prioritaire aux ateliers et des sessions supplémentaires gratuites.</p>
-
         <h2>Nos Abonnements</h2>
         <div className="plans">
           <div className="plan">

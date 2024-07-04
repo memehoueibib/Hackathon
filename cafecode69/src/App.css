@@ -28,3 +28,7 @@ body {
   padding: 20px;
   margin: 150px!important;
 }
+
+ul {
+  list-style-type: none;
+}

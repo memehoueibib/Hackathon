@@ -9,10 +9,11 @@ const ChatbotContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 10000;
 `;
 
 const ChatButton = styled.button`
-  background-color: #007bff;
+  background-color: #d18c3c;
   border: none;
   border-radius: 50%;
   padding: 15px;
@@ -41,10 +42,11 @@ const ChatWindow = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: ${props => (props.open ? 'block' : 'none')};
   margin-bottom: 10px;
+  padding-bottom: 6px;
 `;
 
 const ChatHeader = styled.div`
-  background-color: #007bff;
+  background-color: #d18c3c;
   color: white;
   padding: 10px;
   border-top-left-radius: 8px;
@@ -74,7 +76,6 @@ const ChatMessages = styled.div`
 
 const ChatInputContainer = styled.div`
   display: flex;
-  padding: 10px;
   border-top: 1px solid #ccc;
 `;
 
@@ -87,14 +88,14 @@ const ChatInput = styled.input`
 
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #d18c3c;
   }
 `;
 
 const SendButton = styled.button`
   padding: 5px 10px;
   border: none;
-  background-color: #007bff;
+  background-color: #d18c3c;
   color: white;
   border-radius: 4px;
   cursor: pointer;

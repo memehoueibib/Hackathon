@@ -54,7 +54,7 @@
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #d18c3c;
     background-color: #fff;
   }
   
@@ -81,7 +81,7 @@
     padding: 12px 30px;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #7ec17e;
+    background-color: #d18c3c;
     border: none;
     border-radius: 5px;
     cursor: pointer;

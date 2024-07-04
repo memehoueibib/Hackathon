@@ -4,8 +4,8 @@ import './Header.css';
 function Header() {
   return (
     <header style={{padding: "10px"}}>
-      <div className="logo">Café Code 69</div>
-      <nav>
+      <div className="logo"><a href='http://localhost:3000/'><img style={{width: "120px"}} src='../../logo_nobg.png'/></a></div>
+      <nav style={{fontSize: "larger"}}>
         <a href="/">Accueil</a>
         <a href="/abonnements">Abonnements</a>
         <a href="/ateliers">Ateliers</a>
