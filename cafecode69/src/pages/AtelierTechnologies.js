@@ -9,6 +9,9 @@ function AtelierTechnologies() {
       <Header />
       <div className="content">
         <h2>Atelier d'Initiation aux Technologies Numériques pour Seniors</h2>
+        <div className="section-image">
+          <img src="/seniors-using-tech.webp" alt="Technologies pour Seniors" />
+        </div>
         <p><strong>Objectif :</strong> L'atelier d'initiation aux technologies numériques pour seniors vise à familiariser les participants avec l'utilisation d'un smartphone et des outils de bureautique de base. L'objectif est de rendre les seniors autonomes dans l'utilisation quotidienne de la technologie moderne, en leur fournissant les compétences nécessaires pour communiquer, naviguer sur Internet, gérer des documents et utiliser des applications utiles.</p>
         <h3>Infrastructure et Matériel</h3>
         <ul>
@@ -18,6 +21,9 @@ function AtelierTechnologies() {
           <li>Écrans de Projection : Pour les démonstrations et les présentations en groupe.</li>
           <li>Supports de Cours : Guides imprimés ou numériques pour référence pendant et après l'atelier.</li>
         </ul>
+        <div className="section-image">
+          <img src="/seniors-workshop.webp" alt="Seniors utilisant des technologies" />
+        </div>
         <h3>Structure des Sessions</h3>
         <p><strong>Introduction aux Smartphones (45 minutes)</strong></p>
         <ul>
@@ -53,6 +59,9 @@ function AtelierTechnologies() {
           <li>Gestion des Sessions : Groupes de taille réduite pour une attention personnalisée et une meilleure assimilation des connaissances.</li>
           <li>Suivi et Support Continu : Fournir des contacts pour le support technique après l'atelier et des ressources complémentaires pour renforcer les compétences acquises.</li>
         </ul>
+        <div className="section-image">
+          <img src="/gaming-setup.webp" alt="Atelier pour Seniors" />
+        </div>
         <h3>Jeu de Société - Tech Aventure Senior</h3>
         <p>À la fin du module, un jeu de société sera implémenté pour mettre en pratique le contenu : <strong>Tech Aventure Senior</strong> est un jeu destiné aux seniors, conçu pour les aider à maîtriser les technologies numériques telles que les chatbots et l'assistance vocale. Les joueurs avancent sur un plateau coloré en accomplissant des missions pratiques comme utiliser un chatbot pour vérifier la météo, programmer une alarme vocale ou rechercher des recettes en ligne. Chaque tâche réussie permet de progresser davantage sur un plateau, et le premier joueur à atteindre la fin après avoir complété toutes les missions remporte la partie. Le jeu est conçu pour être convivial et accessible, avec des instructions claires et des symboles faciles à comprendre.</p>
       </div>

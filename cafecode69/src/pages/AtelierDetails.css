@@ -1,61 +1,95 @@
 .atelier-details {
-    padding: 20px;
-  }
-  
-  .atelier-details .content {
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .atelier-details h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .atelier-details h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-  }
-  
-  .atelier-details p,
-  .atelier-details ul {
-    margin-bottom: 15px;
-    line-height: 1.6;
-  }
-  
-  .atelier-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  .ateliers-details {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  ul ul {
-    padding-left: 20px;
-  }
-  
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+.atelier-details .content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.atelier-details h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.atelier-details h3 {
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.atelier-details p,
+.atelier-details ul {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.atelier-details ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.atelier-details ul ul {
+  list-style-type: circle;
+}
+
+.section-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-image img {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.section-image {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.atelier-details strong {
+  color: #444;
+}
+
+.atelier-details button {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.atelier-details button:hover {
+  background-color: #0056b3;
+}

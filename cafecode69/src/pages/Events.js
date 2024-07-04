@@ -69,7 +69,7 @@ function Events() {
     img.src = logoUrl;
     img.onload = () => {
       doc.addImage(img, 'PNG', 10, 70, 50, 50);
-      const qrCodeUrl = 'http://localhost:3000/'; // Remplacez par votre URL QR code
+      const qrCodeUrl = 'http://localhost:3000/events'; // Remplacez par votre URL QR code
 
       // Générer le QR code
       QRCode.toDataURL(qrCodeUrl, { width: 128, margin: 1 }, (err, url) => {

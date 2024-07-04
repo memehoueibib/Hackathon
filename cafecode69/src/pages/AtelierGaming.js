@@ -9,6 +9,9 @@ function AtelierGaming() {
       <Header />
       <div className="content">
         <h2>Atelier de Gaming avec Hackathons pour Développeurs</h2>
+        <div className="section-image">
+          <img src="/gaming.webp" alt="Gaming Workshop" />
+        </div>
         <p><strong>Objectif :</strong> L'atelier de gaming avancé avec hackathons pour développeurs est conçu pour les passionnés de jeux vidéo expérimentés et les développeurs désireux d'explorer et d'innover dans l'industrie du gaming. L'objectif est d'améliorer les compétences de jeu avancées tout en encourageant la création de contenu innovant à travers des hackathons.</p>
         <h3>Public Cible</h3>
         <ul>
@@ -24,6 +27,9 @@ function AtelierGaming() {
           <li>Écrans et Projecteurs : Écrans haute résolution pour la visualisation et la diffusion en direct des événements et des compétitions.</li>
           <li>Logiciels : Environnements de développement intégrés (IDE) comme Unity, Unreal Engine, Blender, et des outils de gestion de projets.</li>
         </ul>
+        <div className="section-image">
+          <img src="/gaming-setup.webp" alt="Gaming Setup" />
+        </div>
         <h3>Structure des Sessions</h3>
         <p><strong>Introduction aux Dernières Tendances et Technologies (30 minutes)</strong></p>
         <ul>
@@ -61,6 +67,9 @@ function AtelierGaming() {
           <li>Gestion des Sessions : Groupes adaptés à la taille des compétitions et des activités pour une expérience optimale.</li>
           <li>Support Continu : Fournir des ressources et des contacts pour le soutien technique et le développement des compétences après l'atelier.</li>
         </ul>
+        <div className="section-image">
+          <img src="/gaming-competition.webp" alt="Gaming Competition" />
+        </div>
         <h3>Jeux Vidéo Avancés</h3>
         <p>L'atelier inclura des compétitions et des hackathons basés sur des jeux vidéo avancés et populaires tels que :</p>
         <ul>

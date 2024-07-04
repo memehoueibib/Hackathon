@@ -9,6 +9,9 @@ function AtelierAlgorithmes() {
       <Header />
       <div className="content">
         <h2>Atelier d'Initiation aux Algorithmes pour Enfants</h2>
+        <div className="section-image">
+          <img src="/algorithmes.webp" alt="Algorithmes pour Enfants" />
+        </div>
         <p><strong>Objectif :</strong> Introduire les enfants aux concepts de base des algorithmes à travers des activités ludiques et interactives, suivies par une application pratique sous forme de jeu.</p>
         <p><strong>Âge recommandé :</strong> 8-12 ans</p>
         <h3>Structure de l'Atelier</h3>
@@ -19,6 +22,9 @@ function AtelierAlgorithmes() {
           <li>Matériel : Tableaux, marqueurs, images de séquences d'activités quotidiennes.</li>
         </ul>
         <p><strong>Activité Ludique : "L'Algorithme du Robot" (30 minutes)</strong></p>
+        <div className="section-image">
+          <img src="/robot.webp" alt="Algorithme du Robot" />
+        </div>
         <ul>
           <li>Description : Les enfants créent des algorithmes pour guider un "robot" humain.</li>
           <li>Matériel : Ruban adhésif pour marquer le sol, cartes d'instructions simples (avancer, tourner à gauche, tourner à droite, ramasser un objet).</li>
@@ -33,6 +39,9 @@ function AtelierAlgorithmes() {
           <li>Déroulement du Jeu : Mise en Place : Placer la grille imprimée sur une table. Placer le personnage sur une case de départ (par exemple, en bas à gauche). Cacher le trésor sur une autre case de la grille (les enfants ne savent pas où se trouve le trésor). Créer l'Algorithme : Les enfants travaillent par équipes pour écrire une série d'instructions qui guideront le personnage vers le trésor. Les instructions sont limitées à : avancer, tourner à gauche, tourner à droite, ramasser. Tester l'Algorithme : Une équipe lit son algorithme à haute voix pendant qu'un autre enfant déplace le pion sur la grille en suivant les instructions. Si le personnage atteint le trésor, l'équipe gagne des points. Si l'algorithme est incorrect, ils peuvent le modifier et réessayer. Échanges et Discussions : Après chaque tentative, discuter des erreurs et des moyens de les corriger. Encourager les enfants à réfléchir à la façon dont ils peuvent améliorer leurs algorithmes.</li>
         </ul>
         <p><strong>Conclusion et Réflexion (20 minutes)</strong></p>
+        <div className="section-image">
+          <img src="/treasure-hunt.webp" alt="Trouve le Trésor" />
+        </div>
         <ul>
           <li>Discussion de Groupe : Parler de ce qu'ils ont appris sur les algorithmes. Discuter de la manière dont les algorithmes sont utilisés dans la vie quotidienne et dans la technologie.</li>
           <li>Questions et Réponses : Encourager les enfants à poser des questions sur ce qu'ils ont appris et à partager leurs expériences.</li>
